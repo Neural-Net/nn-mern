@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "start:server": "cd backend && nodemon server.js --exec babel-node --presets es2015,stage-0",
-    "start:client": "cd client && npm start",
-    "start:dev": "\"npm run start:server\" & \"npm run start:client\""
+    "start-server": "cd backend && nodemon server.js --exec babel-node --presets es2015,stage-0",
+    "start-client": "cd client && npm start",
+    "start-dev": "npm run start-server & npm run start-client"
   },
   "author": "",
   "license": "ISC",
