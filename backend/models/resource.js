@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 const ResourceSchema = new Schema({
   title: String,
-  media: String,
+  mediaSrc: String,
   description: String
 }, { timestamps: true })
 
