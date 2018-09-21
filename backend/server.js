@@ -12,6 +12,15 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(logger('dev'))
 
+let mongoose = require('mongoose')
+mongoose.connect('mongodb://localhost:27017/resources')
+let db = mongoose.connection
+db.on('error', console.error.bind(console, 'connection error'))
+db.once('open', function (callback) {
+  console.log('connection successful')
+})
+
+
 router.get('/', (req, res) => {
   res.json({ message: 'Hello World' })
 })
