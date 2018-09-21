@@ -32,7 +32,7 @@ router.get('/resources', (req, res) => {
   })
 })
 
-router.post('resources', (req, res) => {
+router.post('/resources', (req, res) => {
   const resource = new Resource()
   const { title, mediaSrc, description } = req.body
   if (!title || !mediaSrc || !description) {
