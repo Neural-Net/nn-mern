@@ -16,7 +16,7 @@ class ResourceListContainer extends Component {
   }
 
   loadResourcesFromServer () {
-    fetch('/api/resources')
+    fetch('/api/resources') //eslint-disable-line
       .then(data => data.json())
       .then((res) => {
         if (!res.success) this.setState({ error: res.error })
