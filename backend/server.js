@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(logger('dev'))
 
-mongoose.connect('mongodb://localhost:27017/mern')
+mongoose.connect('mongodb://localhost:27017/nn-mern')
 let db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error'))
 db.once('open', function (callback) {
