@@ -22,6 +22,12 @@ navigate into the /client folder `cd /client`
 
 run `npm install`
 
+### Seed your project with some fake data!
+
+follow the instructions here. You'll need to download the seeding library and run its magical commands (not so magical)
+
+https://github.com/toymachiner62/node-mongo-seeds
+
 ### Run the project
 
 Navigate to the root project folder ex: `/desktop/nn-mern`
