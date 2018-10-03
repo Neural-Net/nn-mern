@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(logger('dev'))
 
-mongoose.connect('mongodb://localhost:27017/resources')
+mongoose.connect('mongodb://localhost:27017/mern')
 let db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error'))
 db.once('open', function (callback) {
@@ -26,6 +26,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/resources', (req, res) => {
+  let db = req.db
   Resource.find((err, resources) => {
     if (err) return res.json({ success: false, error: err })
     return res.json({ success: true, data: resources })
@@ -33,6 +34,7 @@ router.get('/resources', (req, res) => {
 })
 
 router.post('/resources', (req, res) => {
+  let db = req.db
   const resource = new Resource()
   const { title, mediaSrc, description } = req.body
   if (!title || !mediaSrc || !description) {

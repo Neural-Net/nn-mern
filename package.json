@@ -8,7 +8,8 @@
     "start": "node server.js",
     "start-server": "cd backend && nodemon server.js --exec babel-node --presets es2015,stage-0",
     "start-client": "cd client && npm start",
-    "start-dev": "npm run start-server & npm run start-client"
+    "start-dev": "npm run start-server & npm run start-client",
+    "start-db": "mongod"
   },
   "author": "",
   "license": "ISC",
