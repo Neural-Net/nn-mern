@@ -19,6 +19,7 @@ class ResourceListContainer extends Component {
     fetch('/api/resources') //eslint-disable-line
       .then(data => data.json())
       .then((res) => {
+        console.log('res', res)
         if (!res.success) this.setState({ error: res.error })
         else this.setState({ data: res.data })
       })
