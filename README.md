@@ -1,6 +1,6 @@
 # Neural Net with MERN (Mongo Express React Node)
 
-## Setup process
+## Setup process for Mac
 
 Prerequisites: Node, MongoDB
 
@@ -41,3 +41,7 @@ You can run the server by itself via `npm run start-server` or the client with `
 ### Run tests
 
 run the command `npm run test`
+
+## Setup Process for Windows
+
+TBD
