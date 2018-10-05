@@ -1,17 +1,18 @@
 import React from 'react'
 import './ResourceList.css'
-import Resource from './ResourceListItem'
+import ResourceListItem from './ResourceListItem'
 
 const ResourceList = (props) => {
   const resourceItems = props.data.map(resource => (
-    <Resource title={resource.title}
+    <ResourceListItem title={resource.title}
       key={resource._id}
-      mediaSrc={resource.mediaLocation + resource.mediaSrc}
+      mediaType={resource.mediaType}
+      mediaSrc={resource.mediaSrc}
       description={resource.description} />
   ))
 
   return (
-    <div>
+    <div className='resource-list-container'>
       { resourceItems }
     </div>
   )
