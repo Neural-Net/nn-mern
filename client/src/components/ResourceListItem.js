@@ -5,7 +5,7 @@ import './ResourceListItem.css'
 
 const ResourceListItem = ({ title, mediaType, mediaSrc, description }) => {
   return (
-    <div className='resource-container'>
+    <div className='resource-item-container'>
       <h3 className='resource-title'>{title}</h3>
       <div className='resource-media'>{renderResourceMedia(mediaType, mediaSrc)}</div>
       <div className='resource-description'>{description}</div>

@@ -1,5 +1,8 @@
-.resource-container{
-  border: 2px solid blue
+.resource-item-container{
+  border: 2px solid blue;
+  width: 30%;
+  min-height: 400px;
+  margin: 20px 0;
 }
 .resource-title{
 
@@ -8,7 +11,7 @@
 
 }
 .resource-description{
-
+  text-align: start;
 }
 .resource-list-media-image{
   width: 200px;

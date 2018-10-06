@@ -1,0 +1,9 @@
+.resource-list-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid orange;
+}
