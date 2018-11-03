@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import Header from './components/Header'
 import ResourceListContainer from './containers/ResourceListContainer'
+import 'typeface-roboto';
 
 class App extends Component {
   render () {
