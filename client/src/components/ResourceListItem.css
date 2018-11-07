@@ -1,19 +1,22 @@
-.resource-item-container{
-  border: 2px solid blue;
+.resource-item-container {
   width: 30%;
   min-height: 400px;
   margin: 20px 0;
 }
-.resource-title{
+.resource-title {
+  font-size: 18;
+}
+.resource-media {
 
 }
-.resource-media{
-
-}
-.resource-description{
+.resource-description {
   text-align: start;
 }
-.resource-list-media-image{
-  width: 200px;
-  height: 200px;
+.resource-list-media-image {
+  max-width: 500px;
+  height: auto;
+}
+
+.card-actions {
+  align-items: flex-end;
 }
