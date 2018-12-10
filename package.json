@@ -21,8 +21,8 @@
     "concurrently": "^4.0.1",
     "express": "^4.16.3",
     "mongoose": "^5.2.13",
-    "morgan": "^1.9.0",
-    "nodemon": "^1.18.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.7",
     "react-masonry-component": "^6.2.1"
   }
 }
